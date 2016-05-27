@@ -1,0 +1,131 @@
+body{
+  font-family: helvetica, sans-serif;
+}
+#cabecario{
+   height:220px;
+	 background-color:white; 
+	 text-align:center;  
+	 margin:auto;
+   overflow: hidden;
+
+}
+ 
+#linkface{
+ float:right;
+ margin-top:-200px; 
+
+}
+
+header h1{
+	font-family: helvetica, sans-serif;
+    font-size: 20px;	
+}
+nav ul li{
+  display:inline-block;
+	font-size:16px;
+	padding:5px, 5px;
+   
+}
+
+/* botao de menu*/
+.botaomenu{ 
+ color: white;
+text-decoration: none;
+text-transform: uppercase;
+border: none;
+background-color:#00BFFF;
+cursor: pointer;
+padding:19px;
+box-shadow:0 0px 0 #00BFFF; 
+}
+
+.botaomenu:hover{
+   background:#0000FF;
+   box-shadow:0 0px 0 #0000FF; 
+}
+
+#menu{
+  margin:auto;
+  background-color:DeepSkyBlue;
+  width:-9999px;
+  min-height:10px;
+  padding:4px;
+}
+
+#postes{
+  float:left;
+  position:relative;
+  left:20px;
+  background-color:white;
+  width:890px;
+  height:300px;
+  margin-top:20px;
+  padding:20px;
+  color: black;
+  
+}
+
+#tituloposte{
+  text-align: center;
+  color: #00BFFF;
+  font-size: 30px;
+  
+}
+
+#textoposte{
+  padding: 18px;
+  font-family: arial;
+  text-align:justify;
+  
+}
+
+.postes2{
+ float:right;
+ width:400px;
+ height:420px; 
+ background-color:white;
+ position: relative;
+ bottom: 66em;
+ padding: 20px;
+ margin-right: 20px;
+ margin-left: 20px;
+ color: black;
+ text-align: justify;
+}
+
+.rodape{
+
+  background-color:DeepSkyBlue;
+}
+
+
+#botaopostar{
+  color:blue;
+  padding:4px;
+}
+
+.rodape{
+  position: relative;
+  top: 95em;
+  height:200px;
+  background-color:DeepSkyBlue;
+}
+
+#leiamais{
+  float:left;
+  position:relative;
+  left:20px;
+  background-color:white;
+  width:890px;
+  height:300px;
+  margin-top:20px;
+  padding:20px;
+  color: black;
+}
+
+
+
+
+
+
+
