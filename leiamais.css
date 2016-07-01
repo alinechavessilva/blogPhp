@@ -1,6 +1,7 @@
 body{
   font-family: helvetica, sans-serif;
 }
+
 #cabecario{
    height:220px;
    background-color:white; 
@@ -9,11 +10,18 @@ body{
    overflow: hidden;
 
 }
+ 
+#linkface{
+ float:right;
+ margin-bottom:500px; 
+
+}
 
 header h1{
   font-family: helvetica, sans-serif;
     font-size: 20px;  
 }
+
 nav ul li{
   display:inline-block;
   font-size:16px;
@@ -46,39 +54,55 @@ box-shadow:0 0px 0 #00BFFF;
   padding:4px;
 }
 
-.adicionar{
- position: absolute;
- width:440px;
- height:350px; 
- background-color:white;
- left:59em;
- top:21em;
- padding: 20px;
- color: black;
- text-align: justify;
+#tituloposte{
+  text-align: center;
+  color: #00BFFF;
+  font-size: 30px;
+  
 }
 
-#postes{
-  float:left;
-  position:relative;
-  left:20px;
-  background-color:white;
-  width:850px;
-  height:300px;
-  margin-top:20px;
-  padding:20px;
-  color: black;
-  top: 2em;
- 
+#textoposte{
+  padding: 18px;
+  font-family: arial;
+  text-align:justify;
+  
 }
+
+.rodape{
+
+  background-color:DeepSkyBlue;
+}
+
+
+#botaopostar{
+  color:blue;
+  padding:4px;
+}
+
 .rodape{
   position: relative;
-  top: 200em;
+  top: 2em;
   height:200px;
   background-color:DeepSkyBlue;
 }
 
-.botaopostar{
-  color:blue;
-  padding:4px;
+#leiamais{
+  margin:auto;
+  position:relative;
+  left:20px;
+  background-color:white;
+  width:1000px;
+  height:600px;
+  margin-top:20px;
+  padding:20px;
+  color: black;
 }
+
+#palavraComentario{
+  color: #00BFFF;
+}
+
+
+
+
+

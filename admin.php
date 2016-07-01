@@ -64,25 +64,16 @@
       <div class="adicionar">
       <form method="POST" action="postes.php">
 
-          Adicionar postes<br><br>
+          Adicionar novo post<br><br>
 
           Titulo <input type="text" name="titulo"><br>
-          Texto <textarea name="textoposte" cols="60" rows="5"> </textarea><br>
+          Texto <textarea name="textoposte" cols="60" rows="12"> </textarea><br>
           Autor <input type="text" name="autor"><br>
 
          <input id="botaopostar" type="submit" name="botaopostar" value="postar"><br>
        
       </form>
       </div> 
-
-<!--     <footer>
-      <div class="rodape"> 
-
-      </div>
-     </footer>
-    
-  </body>
-</html> -->
 
 <?php include('rodape.php'); ?>  
 

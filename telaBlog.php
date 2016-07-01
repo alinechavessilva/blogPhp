@@ -22,8 +22,8 @@
 			
 				<img id="logo" src="logo elohim.jpg" aling="center" width="200s" height="150" alt="logo">
 				<h1 aling="center">Comunidade Cat&oacute;lica Mission&aacute;ria Elohim</h1>
-				<a id="linkface" href="Comunidade Católica Missionária Elohim.html" target="_blank" title="Facebook"><img src="facebook.png" aling="Right" width="30" height="30" alt="facebook"></a>
-		   
+				<!-- <a id="linkface" href="Comunidade Católica Missionária Elohim.html" target="_blank" title="Facebook"><img src="facebook.png" aling="Right" width="30" height="30" alt="facebook"></a>
+		    -->
 		</header>	
 	</div>		
 		<!--menu de navegação-->
@@ -33,7 +33,8 @@
 			 <li><a href="telaBlog.php" class="botaomenu">Home</a></li>
 			 <li><a href="#" class="botaomenu">Miss&otilde;es e projetos</a></li>
 		     <li><a href="#" class="botaomenu">unidades</a></li>
-			 <li><a href="#" class="botaomenu">fale conosco</a></li>		
+			 <li><a href="#" class="botaomenu">fale conosco</a></li>
+			 <li><a href="login.html" class="botaomenu">Area admin</a></li>		
 			</ul>
 		   </div>	  
 		</nav>
@@ -89,7 +90,10 @@
                       ?>
                     </div>
 
-                                  <!-- adiciona comentario -->
+                <!-- ////////////captura ip usuário///////////////////// -->
+                    <?php include'capturaIP.php'; ?>
+
+               <!-- ////////////adiciona comentario///////////////////// -->
                     <div id="linkcomentario">
                       		<a href="#" onclick="mostrar()">comente</a>
                     </div>
@@ -97,7 +101,7 @@
 
 	                <div id="comentario" style="display: none">
 
-	                      <form name="comentform" method="post" action="comentarios/insertcoment.php">
+	                      <form name="comentform" method="post" action="comentarios/insertcoment.php?id=<?php echo $row['id']; ?>">
 
 					      Nome: <input type="text" name="nome" />
 					      E-mail: <input type="text" name="email" /><br>
@@ -123,32 +127,19 @@
 
 		       <div class="postes2">
                <h2>Pôstes anteriores</h2> 
-
-			   <?php
-               $postesanteriores=mysql_query("select * from poste order by id desc limit 10 offset 4;");
-      
-               while( $tituloanteriores=mysql_fetch_array($postesanteriores)) {
-               ?>
-
-               <a href="">
-               	<?php echo $tituloanteriores['titulo']; ?>
-               </a>
-
                <?php
-                }
-
-			 ?>
-
+			   include 'postesanteriores.php';
+               ?>
                </div>
 
 		</section>
 		
 		<!--rodapé do blog-->
-		<footer>
+	<footer>
 			<div class="rodape"> 
 
 			</div>
-		</footer>
+	</footer>
 		
    </body>
 	
